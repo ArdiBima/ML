@@ -2,15 +2,15 @@ import tensorflow as tf
 import numpy as np
 
 # Load the model architecture from JSON
-model_architecture_path = 'image_classifier_model_3.json'
+model_architecture_path = 'image_classifier_model_5.json'
 with open(model_architecture_path, 'r') as json_file:
     loaded_model_json = json_file.read()
 
 # Load the model weights
-model_weights_path = 'image_classifier_weights.h5'
+model_weights_path = 'image_classifier_weights_3.h5'
 
 # Load the image to make predictions on
-image_path = 'image.jpg'
+image_path = 'messageImage_1685453464935.jpg'
 image = tf.keras.preprocessing.image.load_img(image_path, target_size=(150, 150))
 input_data = tf.keras.preprocessing.image.img_to_array(image)
 input_data = np.expand_dims(input_data, axis=0)
