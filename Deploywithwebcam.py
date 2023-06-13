@@ -3,12 +3,12 @@ import tensorflow as tf
 import numpy as np
 
 # Load the model architecture from JSON
-model_architecture_path = 'image_classifier_model_5.json'
+model_architecture_path = 'image_classifier_model_7.json'
 with open(model_architecture_path, 'r') as json_file:
     loaded_model_json = json_file.read()
 
 # Load the model weights
-model_weights_path = 'image_classifier_weights_3.h5'
+model_weights_path = 'image_classifier_weights_7.h5'
 
 # Load the class labels
 class_labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']  
